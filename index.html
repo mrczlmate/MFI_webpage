@@ -3,15 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minőségi varroda Budapesten | Egyedi ruhakészítés és ruhajavítás</title>
   <meta name="description" content="Budapesti varroda 20+ év tapasztalattal: egyedi ruhakészítés, ruhajavítás, méretre szabás, cipzárcsere. Nézd meg munkáinkat galériánkban és vedd fel velünk a kapcsolatot!">
+  <title>Minőségi varroda Budapesten | Egyedi ruhakészítés és ruhajavítás</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-coffee" href="#">Varroda</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#bemutatkozas">Bemutatkozás</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#szolgaltatasok">Szolgáltatások</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#arlista">Árlista</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria">Galéria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kapcsolat">Kapcsolat</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- Hero -->
-  <section class="text-center section bg-coffee d-flex align-items-center" style="min-height: 70vh;">
+  <section class="text-center section bg-coffee d-flex align-items-center hero-section">
     <div class="container">
       <h1 class="display-4 fw-bold">Egyedi varrás Budapesten</h1>
       <p class="lead">Tapasztalt varroda ruhajavítással, méretre igazítással és egyedi ruhakészítéssel</p>
@@ -20,7 +49,7 @@
   </section>
 
   <!-- Bemutatkozás -->
-  <section class="section">
+  <section class="section" id="bemutatkozas">
     <div class="container text-center">
       <h2>Bemutatkozás</h2>
       <p>A [Varroda Név] egy családi kézben lévő budapesti varroda, amely több mint 20 éve nyújt magas színvonalú varrási szolgáltatásokat. Célunk, hogy ügyfeleink személyre szabott, tökéletesen illeszkedő és stílusos ruhadarabokat viselhessenek. Legyen szó egyszerű igazításról vagy egyedi ruhakészítésről, munkánkat gondosság és szakértelem jellemzi.</p>
@@ -28,7 +57,7 @@
   </section>
 
   <!-- Szolgáltatások -->
-  <section class="section bg-light-beige">
+  <section class="section bg-light-beige" id="szolgaltatasok">
     <div class="container">
       <div class="text-center mb-5">
         <h2>Szolgáltatásaink</h2>
@@ -69,112 +98,125 @@
   
   <!-- Árlista -->
 <section class="section" id="arlista">
-    <div class="container">
-      <h2 class="text-center">Árlista</h2>
-      <p class="text-muted text-center">Fedezd fel szabászati és javítási szolgáltatásaink részletes árlistáját. Az árak forintban értendők és az ÁFÁ-t tartalmazzák.</p>
-  
-      <div class="row g-4 mt-5">
-  
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-coffee">Lakástextil & Egyéb munkák</h5>
-              <ul class="list-unstyled small">
-                <li><strong>Kész függöny rövidítése:</strong> 2000 Ft-tól / db</li>
-                <li><strong>Textília szegés (szabással):</strong> 800 Ft/m</li>
-                <li><strong>Ágynemű méretre igazítás:</strong> 1500 Ft-tól</li>
-                <li><strong>Párnahuzat készítés (cipzáras):</strong> 2000 Ft-tól</li>
-                <li><strong>Ágynemű varrás:</strong> 5500 Ft-tól</li>
-              </ul>
-            </div>
+  <div class="container">
+    <h2 class="text-center">Árlista</h2>
+    <p class="text-muted text-center">Fedezd fel szabászati és javítási szolgáltatásaink részletes árlistáját. Az árak forintban értendők és az ÁFÁ-t tartalmazzák.</p>
+
+    <div class="row g-4 mt-5">
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-coffee">Lakástextil & Egyéb munkák</h5>
+            <table class="table table-borderless table-sm">
+              <tbody>
+                <tr><td>Kész függöny rövidítése</td><td class="text-end">2000 Ft-tól / db</td></tr>
+                <tr><td>Textília szegés (szabással)</td><td class="text-end">800 Ft/m</td></tr>
+                <tr><td>Ágynemű méretre igazítás</td><td class="text-end">1500 Ft-tól</td></tr>
+                <tr><td>Párnahuzat készítés (cipzáras)</td><td class="text-end">2000 Ft-tól</td></tr>
+                <tr><td>Ágynemű varrás</td><td class="text-end">5500 Ft-tól</td></tr>
+              </tbody>
+            </table>
           </div>
         </div>
-  
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-coffee">Szabászati alapárak</h5>
-              <ul class="list-unstyled small">
-                <li><strong>Szoknya bélés nélkül:</strong> 10 000 Ft-tól</li>
-                <li><strong>Ruha béléssel:</strong> 25 000 Ft-tól</li>
-                <li><strong>Kabát bélés nélkül:</strong> 36 000 Ft-tól</li>
-                <li><strong>Alkalmi ruha:</strong> 30 000 Ft-tól</li>
-                <li><strong>Menyasszonyi ruha:</strong> 90 000 Ft-tól</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-coffee">Nadrág javítás</h5>
-              <ul class="list-unstyled small">
-                <li><strong>Felhajtás:</strong> 1000 Ft-tól</li>
-                <li><strong>Cipzárcsere:</strong> 2500 Ft-tól</li>
-                <li><strong>Farmer stoppolás:</strong> 1000 Ft-tól</li>
-                <li><strong>Derékszűkítés:</strong> 2500 Ft-tól</li>
-                <li><strong>Övbújtató készítés:</strong> 400 Ft/db</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-coffee">Póló, Ing, Blúz javítás</h5>
-              <ul class="list-unstyled small">
-                <li><strong>Ujj rövidítés:</strong> 1500 Ft-tól</li>
-                <li><strong>Gallér fordítás:</strong> 2500 Ft-tól</li>
-                <li><strong>Alja felhajtás:</strong> 1500 Ft-tól</li>
-                <li><strong>Gomblyuk javítás:</strong> 1000 Ft-tól</li>
-                <li><strong>Válltömés csere:</strong> 800 Ft/db</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-coffee">Kabát, Zakó, Blézer</h5>
-              <ul class="list-unstyled small">
-                <li><strong>Alja/Ujj felhajtás:</strong> 3000 Ft-tól</li>
-                <li><strong>Bélés csere:</strong> 3000 Ft-tól + bélés</li>
-                <li><strong>Zseb javítás:</strong> 1000 Ft-tól</li>
-                <li><strong>Cipzár csere:</strong> 4000 Ft-tól</li>
-                <li><strong>Kocs csere:</strong> 700 Ft-tól</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-6">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title text-coffee">Kellékek</h5>
-              <ul class="list-unstyled small">
-                <li><strong>Függönybehúzó 3–5 cm:</strong> 300 Ft/m</li>
-                <li><strong>Függönybehúzó 5 cm-től:</strong> 700 Ft/m</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
       </div>
-  
-      <div class="mt-5">
-        <p class="text-muted small">
-          <strong>Megjegyzés:</strong> Az árlistában nem szereplő munkák esetén <strong>4000 Ft/óra</strong> munkadíjat számolunk fel. Sürgős munkák esetén <strong>50% felár</strong> kerül felszámításra. Árváltozás jogát fenntartjuk.
-        </p>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-coffee">Szabászati alapárak</h5>
+            <table class="table table-borderless table-sm">
+              <tbody>
+                <tr><td>Szoknya bélés nélkül</td><td class="text-end">10 000 Ft-tól</td></tr>
+                <tr><td>Ruha béléssel</td><td class="text-end">25 000 Ft-tól</td></tr>
+                <tr><td>Kabát bélés nélkül</td><td class="text-end">36 000 Ft-tól</td></tr>
+                <tr><td>Alkalmi ruha</td><td class="text-end">30 000 Ft-tól</td></tr>
+                <tr><td>Menyasszonyi ruha</td><td class="text-end">90 000 Ft-tól</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-coffee">Nadrág javítás</h5>
+            <table class="table table-borderless table-sm">
+              <tbody>
+                <tr><td>Felhajtás</td><td class="text-end">1000 Ft-tól</td></tr>
+                <tr><td>Cipzárcsere</td><td class="text-end">2500 Ft-tól</td></tr>
+                <tr><td>Farmer stoppolás</td><td class="text-end">1000 Ft-tól</td></tr>
+                <tr><td>Derékszűkítés</td><td class="text-end">2500 Ft-tól</td></tr>
+                <tr><td>Övbújtató készítés</td><td class="text-end">400 Ft/db</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-coffee">Póló, Ing, Blúz javítás</h5>
+            <table class="table table-borderless table-sm">
+              <tbody>
+                <tr><td>Ujj rövidítés</td><td class="text-end">1500 Ft-tól</td></tr>
+                <tr><td>Gallér fordítás</td><td class="text-end">2500 Ft-tól</td></tr>
+                <tr><td>Alja felhajtás</td><td class="text-end">1500 Ft-tól</td></tr>
+                <tr><td>Gomblyuk javítás</td><td class="text-end">1000 Ft-tól</td></tr>
+                <tr><td>Válltömés csere</td><td class="text-end">800 Ft/db</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-coffee">Kabát, Zakó, Blézer</h5>
+            <table class="table table-borderless table-sm">
+              <tbody>
+                <tr><td>Alja/Ujj felhajtás</td><td class="text-end">3000 Ft-tól</td></tr>
+                <tr><td>Bélés csere</td><td class="text-end">3000 Ft-tól + bélés</td></tr>
+                <tr><td>Zseb javítás</td><td class="text-end">1000 Ft-tól</td></tr>
+                <tr><td>Cipzár csere</td><td class="text-end">4000 Ft-tól</td></tr>
+                <tr><td>Kocs csere</td><td class="text-end">700 Ft-tól</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title text-coffee">Kellékek</h5>
+            <table class="table table-borderless table-sm">
+              <tbody>
+                <tr><td>Függönybehúzó 3-5 cm</td><td class="text-end">300 Ft/m</td></tr>
+                <tr><td>Függönybehúzó 5 cm-től</td><td class="text-end">700 Ft/m</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+
+    <div class="mt-5">
+      <p class="text-muted small">
+        <strong>Megjegyzés:</strong> Az árlistában nem szereplő munkák esetén <strong>4000 Ft/óra</strong> munkadíjat számolunk fel. Sürgős munkák esetén <strong>50% felár</strong> kerül felszámításra. Árváltozás jogát fenntartjuk.
+      </p>
+    </div>
+  </div>
+</section>
+
   
 
   <!-- Galéria -->
-  <section class="section bg-light-beige">
+  <section class="section bg-light-beige" id="galeria">
     <div class="container text-center">
       <h2>Galéria</h2>
       <p>Tekintsd meg korábbi munkáinkat és inspirálódj a következő ruhadarabodhoz!</p>
@@ -204,18 +246,46 @@
   </section>
 
   <!-- Kapcsolat -->
-  <section class="section">
-    <div class="container text-center">
-      <h2>Kapcsolat</h2>
-      <p>Cím: Budapest, Példa utca 1. | Telefon: +36 30 123 4567 | Email: info@varroda.hu</p>
-      <form class="row justify-content-center mt-4">
+  <section class="section" id="kapcsolat">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Kapcsolat</h2>
+        <p class="text-muted">Kérdésed van? Vedd fel velünk a kapcsolatot telefonon, e-mailben, vagy látogass el hozzánk személyesen!</p>
+      </div>
+      <div class="row g-4">
+  
         <div class="col-md-6">
-          <input type="text" class="form-control mb-3" placeholder="Név">
-          <input type="email" class="form-control mb-3" placeholder="Email">
-          <textarea class="form-control mb-3" rows="4" placeholder="Üzenet"></textarea>
-          <button type="submit" class="btn btn-coffee">Küldés</button>
+          <div class="bg-white p-4 rounded shadow-sm h-100">
+            <h5 class="text-coffee mb-3">Elérhetőségeink</h5>
+            <ul class="list-unstyled mb-4">
+              <li><strong>Cím:</strong> Budapest, Példa utca 1.</li>
+              <li><strong>Telefon:</strong> <a href="tel:+36301234567" class="text-decoration-none">+36 30 123 4567</a></li>
+              <li><strong>Email:</strong> <a href="mailto:info@varroda.hu" class="text-decoration-none">info@varroda.hu</a></li>
+            </ul>
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Név" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Email" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="4" placeholder="Üzenet" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-coffee">Üzenet küldése</button>
+            </form>
+          </div>
         </div>
-      </form>
+  
+        <div class="col-md-6">
+          <div class="ratio ratio-4x3 rounded shadow-sm">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10889.889595720536!2d19.0402358!3d47.4979137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc1e39e8b09b%3A0xd58018f8a29eec97!2sBudapest!5e0!3m2!1shu!2shu!4v1648724410507!5m2!1shu!2shu"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+  
+      </div>
     </div>
   </section>
 
