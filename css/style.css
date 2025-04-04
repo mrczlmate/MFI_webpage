@@ -1,0 +1,59 @@
+body {
+    background-color: #F5EFE6;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .section {
+    padding: 80px 0;
+  }
+  .bg-coffee {
+    background: url('https://images.unsplash.com/photo-1587613755376-9132b0b20fcd?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+    color: white;
+    position: relative;
+  }
+  .bg-coffee::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .bg-coffee .container {
+    position: relative;
+    z-index: 1;
+  }
+  .bg-light-beige {
+    background-color: #EADBC8;
+  }
+  .btn-coffee {
+    background-color: #A47551;
+    color: white;
+  }
+  .btn-coffee:hover {
+    background-color: #5C3A21;
+    color: white;
+  }
+  .text-coffee {
+    color: #A47551;
+  }
+  footer {
+    background-color: #5C3A21;
+    color: white;
+    padding: 20px 0;
+  }
+  .service-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    padding: 30px;
+    transition: all 0.3s ease;
+    height: 100%;
+  }
+  .service-box:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transform: translateY(-5px);
+  }
+  .service-icon {
+    font-size: 36px;
+    color: #A47551;
+    margin-bottom: 15px;
+  }
