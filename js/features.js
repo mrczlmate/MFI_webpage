@@ -1,5 +1,8 @@
 
-const lightbox = GLightbox({ selector: '.glightbox' });
+const lightboxElements = document.querySelectorAll('.glightbox');
+if (lightboxElements.length > 0) {
+  const lightbox = GLightbox({ selector: '.glightbox' });
+}
 
 document.addEventListener("DOMContentLoaded", function () {
     const navLinks = document.querySelectorAll(".navbar-collapse .nav-link");
