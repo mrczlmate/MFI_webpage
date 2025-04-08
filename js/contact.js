@@ -1,3 +1,4 @@
+"use strict"
 // contact.js – Üzenetküldés e-mail kliens megnyitásával (mailto)
 
 document.addEventListener("DOMContentLoaded", () => {

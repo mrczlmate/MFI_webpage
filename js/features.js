@@ -1,3 +1,4 @@
+"use strict"
 
 const lightboxElements = document.querySelectorAll('.glightbox');
 if (lightboxElements.length > 0) {
