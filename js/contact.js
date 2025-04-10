@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const subject = encodeURIComponent("Üzenet a varroda weboldaláról");
       const body = encodeURIComponent(`Név: ${name}\nEmail: ${email}\n\nÜzenet:\n${message}`);
   
-      window.location.href = `mailto:merczel259@gmail.com?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:merczelg@gmail.com?subject=${subject}&body=${body}`;
     });
   });
   
