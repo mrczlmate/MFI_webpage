@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /teszt-oldal/
+
+Sitemap: https://mfiruhajavitas.hu/sitemap.xml
