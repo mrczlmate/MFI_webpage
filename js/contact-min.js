@@ -2,4 +2,4 @@
 Email: ${l}
 
 \xdczenet:
-${r}`);window.location.href=`mailto:merczel259@gmail.com?subject=${i}&body=${o}`})});
+${r}`);window.location.href=`mailto:merczelg@gmail.com?subject=${i}&body=${o}`})});
