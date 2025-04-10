@@ -36,8 +36,25 @@ h2 {
   color: white;
 }
 
-.images {
-  aspect-ratio: 3 / 2;
+.gallery-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.images_x, .images_y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images_x {
+  aspect-ratio: 4 / 3;
+}
+
+.images_y {
+  aspect-ratio: 3 / 4;
 }
 
 footer {
