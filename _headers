@@ -4,5 +4,10 @@
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: no-referrer
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net; object-src 'none'
   Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+  Content-Security-Policy:
+    default-src 'self';
+    script-src 'self' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net;
+    style-src 'self' https://cdn.jsdelivr.net;
+    object-src 'none';
