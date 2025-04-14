@@ -1,4 +1,4 @@
-// cookie-consent.js
+  // cookie-consent.js
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
   acceptBtn.addEventListener("click", function () {
     localStorage.setItem("cookiesConsent", "accepted");
     banner.style.display = "none";
+    window.dataLayer.push({ event: 'consent_given' });
     allowConsent();
   });
 
