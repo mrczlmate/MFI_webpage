@@ -1,4 +1,3 @@
-  // cookie-consent.js
 "use strict";
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -8,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const consent = localStorage.getItem("cookiesConsent");
 
-  // Set default denied state BEFORE loading any scripts
+  // Állítsuk be az alapértelmezett tiltást, mielőtt bármilyen script betöltődne
   window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
 
@@ -19,12 +18,17 @@ document.addEventListener("DOMContentLoaded", function () {
     'security_storage': 'granted'
   });
 
-  if (!consent) {
-    banner.style.display = "flex";
-  } else if (consent === "accepted") {
+  // Döntés ellenőrzése és banner megjelenítése
+  if (consent === "accepted") {
+    banner.style.display = "none";
     allowConsent();
+  } else if (consent === "rejected") {
+    banner.style.display = "none";
+  } else {
+    banner.style.display = "flex";
   }
 
+  // Elfogadás
   acceptBtn.addEventListener("click", function () {
     localStorage.setItem("cookiesConsent", "accepted");
     banner.style.display = "none";
@@ -32,11 +36,13 @@ document.addEventListener("DOMContentLoaded", function () {
     allowConsent();
   });
 
+  // Elutasítás
   rejectBtn.addEventListener("click", function () {
     localStorage.setItem("cookiesConsent", "rejected");
     banner.style.display = "none";
   });
 
+  // Analytics engedélyezése
   function allowConsent() {
     gtag('consent', 'update', {
       'ad_storage': 'granted',
