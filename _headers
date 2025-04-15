@@ -7,30 +7,11 @@
   Permissions-Policy: geolocation=(), microphone=(), camera=()
 
   Content-Security-Policy:
-    default-src 'self';
-    script-src-elem 'self'
-      'unsafe-inline' 'unsafe-eval'
-      https://cdn.jsdelivr.net
-      https://www.googletagmanager.com
-      https://www.google-analytics.com
-      https://www.gstatic.com
-      https://region1.google-analytics.com
-      https://tagmanager.google.com;
-    script-src 'self'
-      'unsafe-inline' 'unsafe-eval'
-      https://cdn.jsdelivr.net
-      https://www.googletagmanager.com
-      https://www.google-analytics.com
-      https://www.gstatic.com
-      https://region1.google-analytics.com
-      https://tagmanager.google.com;
-    style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
-    font-src 'self' https://cdn.jsdelivr.net;
-    connect-src 'self'
-      https://www.google-analytics.com
-      https://region1.google-analytics.com
-      https://www.googletagmanager.com;
-    img-src 'self' data:
-      https://www.google-analytics.com
-      https://www.googletagmanager.com;
+    default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;
+    script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;
+    script-src-elem * 'unsafe-inline' 'unsafe-eval' data: blob:;
+    style-src * 'unsafe-inline' data:;
+    img-src * data: blob:;
+    font-src * data:;
+    connect-src * data:;
     object-src 'none';
