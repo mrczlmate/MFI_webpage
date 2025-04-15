@@ -13,6 +13,7 @@
     Content-Security-Policy = '''
       default-src 'self';
       script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval';
+      script-src-elem 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval';
       style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';
       font-src 'self' https://cdn.jsdelivr.net;
       img-src 'self' data: https://www.google-analytics.com;
