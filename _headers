@@ -1,17 +1,2 @@
 /*
-  X-Content-Type-Options: nosniff
-  X-Frame-Options: SAMEORIGIN
-  X-XSS-Protection: 1; mode=block
-  Referrer-Policy: no-referrer
-  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  Permissions-Policy: geolocation=(), microphone=(), camera=()
-
-  Content-Security-Policy:
-    default-src * 'unsafe-inline' 'unsafe-eval' data: blob:;
-    script-src * 'unsafe-inline' 'unsafe-eval' data: blob:;
-    script-src-elem * 'unsafe-inline' 'unsafe-eval' data: blob:;
-    style-src * 'unsafe-inline' data:;
-    img-src * data: blob:;
-    font-src * data:;
-    connect-src * data:;
-    object-src 'none';
+  Content-Security-Policy: default-src * data: blob: 'unsafe-inline' 'unsafe-eval';
