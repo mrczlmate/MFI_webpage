@@ -8,10 +8,10 @@
 
   Content-Security-Policy:
     default-src 'self';
-    script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval';
-    script-src-elem 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com 'unsafe-inline' 'unsafe-eval';
-    style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+    script-src 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com https://www.gstatic.com https://region1.google-analytics.com 'unsafe-inline' 'unsafe-eval';
+    script-src-elem 'self' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com https://www.gstatic.com https://region1.google-analytics.com 'unsafe-inline' 'unsafe-eval';
+    style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline';
     font-src 'self' https://cdn.jsdelivr.net;
-    connect-src 'self' https://www.google-analytics.com;
-    img-src 'self' data: https://www.google-analytics.com;
+    connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://region1.google-analytics.com;
+    img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com;
     object-src 'none';
